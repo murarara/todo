@@ -1,0 +1,20 @@
+@startuml ユースケース図
+
+left to right direction
+skinparam packageStyle rectangle
+
+skinparam {
+  dpi 300
+  shadowing false
+}
+
+actor ユーザ
+
+
+rectangle タスク管理システム {
+	ユーザ -- (タスクを管理する)
+	ユーザ -- (メンバーを招待する)
+	ユーザ -- (タスクを参照する)
+}
+
+@enduml
